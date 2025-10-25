@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables and secrets
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Agent data and memory (contains sensitive/dynamic data)
+data/memory/
+data/logs/
+data/analytics/
+*.db
+*.sqlite
+*.sqlite3
+
+# ChromaDB vector stores
+chroma/
+vector/
+
+# MCP server data
+mcp-servers/*/data/
+mcp-servers/*/logs/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Documentation builds (if we add Sphinx later)
+docs/_build/
+docs/.doctrees/

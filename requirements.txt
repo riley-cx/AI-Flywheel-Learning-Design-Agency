@@ -1,0 +1,85 @@
+# AI Flywheel Agency - Python Dependencies
+# Install: pip install -r requirements.txt
+
+# Core AI & API
+anthropic>=0.18.0                  # Claude API client
+openai>=1.12.0                     # OpenAI API (optional, for comparison)
+
+# Data validation & models
+pydantic>=2.6.0                    # Data validation
+pydantic-settings>=2.1.0           # Settings management
+python-dotenv>=1.0.0               # Environment variables
+
+# Database & Storage
+psycopg2-binary>=2.9.9             # PostgreSQL (for agent memory)
+sqlalchemy>=2.0.25                 # ORM
+alembic>=1.13.0                    # Database migrations
+redis>=5.0.1                       # Cache (optional)
+
+# Vector Database (for semantic memory)
+chromadb>=0.4.22                   # Semantic search in memory
+sentence-transformers>=2.3.0       # Embeddings for semantic search
+
+# Web Framework (for API & dashboard)
+fastapi>=0.109.0                   # API framework
+uvicorn[standard]>=0.27.0          # ASGI server
+websockets>=12.0                   # Real-time updates
+python-multipart>=0.0.6            # File uploads
+
+# CLI
+click>=8.1.7                       # CLI framework
+rich>=13.7.0                       # Beautiful terminal output
+prompt-toolkit>=3.0.43             # Interactive CLI
+questionary>=2.0.1                 # Better CLI prompts
+
+# HTTP & APIs
+httpx>=0.26.0                      # Async HTTP client
+aiohttp>=3.9.3                     # Alternative async HTTP
+requests>=2.31.0                   # Sync HTTP (for simple cases)
+beautifulsoup4>=4.12.3             # Web scraping
+lxml>=5.1.0                        # XML/HTML parsing
+
+# Data Processing
+pandas>=2.2.0                      # Data analysis
+numpy>=1.26.3                      # Numerical computing
+python-dateutil>=2.8.2             # Date parsing
+
+# YAML & Config
+pyyaml>=6.0.1                      # YAML parsing
+toml>=0.10.2                       # TOML config files
+
+# Logging & Monitoring
+structlog>=24.1.0                  # Structured logging
+python-json-logger>=2.0.7          # JSON logging
+
+# Testing
+pytest>=8.0.0                      # Test framework
+pytest-asyncio>=0.23.4             # Async testing
+pytest-cov>=4.1.0                  # Coverage
+pytest-mock>=3.12.0                # Mocking
+httpx-mock>=0.10.0                 # Mock HTTP
+
+# Utilities
+tenacity>=8.2.3                    # Retry logic
+backoff>=2.2.1                     # Exponential backoff
+schedule>=1.2.0                    # Task scheduling
+croniter>=2.0.1                    # Cron expressions
+
+# Security
+cryptography>=42.0.0               # Encryption
+python-jose[cryptography]>=3.3.0   # JWT tokens
+passlib[bcrypt]>=1.7.4             # Password hashing
+
+# MCP Protocol (when available)
+# mcp>=0.1.0                       # TODO: Add when MCP SDK released
+
+# Development Tools
+black>=24.1.1                      # Code formatter
+ruff>=0.2.0                        # Linter
+mypy>=1.8.0                        # Type checking
+ipython>=8.20.0                    # Better Python shell
+ipdb>=0.13.13                      # Debugger
+
+# Documentation
+mkdocs>=1.5.3                      # Documentation
+mkdocs-material>=9.5.6             # Material theme
